@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+body {
+
+  padding: 0;
+margin: 0;
+}
+
+
+
+
+
+
+
+/* 共通 */
+
+a{
+  width:100px;
+  height:24px;
+  background:greenyellow;
+  padding: 8px;
+  cursor: pointer;
+  color:white;
+  border-radius: 16px;
+  text-decoration: none;
+  display:inline-block;
+}
+h1{
+  margin: 0;
+  font-weight: normal;
+}
+h2{
+  margin: 0;
+  font-weight: normal;
+}
+h3{
+  margin: 0;
+  font-weight: normal;
+}
+
+
+.container{
+  width: calc(100% - 32px);
+
+box-sizing: border-box;
+margin: 0 auto;
+max-width: 800px;
+
+
+}
+
+p{
+  margin: 0;
+}
+
+/* へっっだー */
+
+header{
+  margin: 0;
+padding: 16px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+.pc{
+  display: none;
+}
+
+.sp{
+
+  width: 116px;
+  height: 32px;
+  vertical-align: bottom;
+  display: inline-block;
+}
+
+
+/* 
+ヒーロー */
+
+.hero{
+  background:skyblue url(bg.png) repeat-x center bottom;
+padding-top: 64px;
+text-align: center;
+
+}
+.hero img{
+  width:300px;height:312px;
+  vertical-align: bottom;
+  display:block;
+  
+  margin: 0 auto;
+}
+.hero a{
+  margin: 64px 0px;
+}
+
+/* メイン */
+
+.main{
+  padding: 64px;
+}
+.main img{
+width: 300px;height: 200px;
+padding-top: 64px;
+
+}
+.main h3{
+  margin-bottom: 24px;
+}
+.main h2{
+  text-align: center;
+}
+.gazou{
+  text-align: center;
+}
+
+
+
+/* フッター */
+
+footer{
+  padding: 64px;
+  background: #000;
+  color:white;
+  text-align: center;
+}
+
+
+
+@media (min-width:600px){
+
+.sp{
+  display: none;
+}
+.pc{
+  display: inline-block;
+
+}
+
+
+/* 火っっロー */
+.all{
+  display:flex;
+
+}
+.hidari{
+  flex:1;
+}
+.migi{
+  flex:1;
+}
+.hidari{
+  margin-top: 32px;
+}
+
+
+/* メイン */
+.feature{
+  display: flex;
+gap:32px;
+}
+.moji{
+  margin-top: 16px;
+}
+
+.feature:nth-child(odd) {
+  flex-direction: row-reverse;
+
+
+}
+
+
+
+
+
+それがクリアできたら、pc画面用にいじっていく。
+
+divで区切ったりしてないから、それでうまくいってないんだと思う。
